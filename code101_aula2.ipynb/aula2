@@ -1,0 +1,343 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "code101_aula2.ipynb",
+      "version": "0.3.2",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sidon/code101-edevo/blob/master/code101_aula2.ipynb/aula2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "Csbnc-2c7zD4",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "metadata": {
+        "id": "ud3W3Dw97_hF",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "# Alô, Mundo\n",
+        "Python é uma linguagem simpes com uma sintaxe muito direta que encoraja o programador a programar sem a utilização de “codigos preparados” chamado na comunidade de **Boilerplate** (codigos que se repentem). A diretiva mais simples em python é a função print (comando no python 2.x, função no 3.x), que imprime uma linha, e, ao contrario de outras linguagens, inclui o avanço de linha.\n",
+        "\n",
+        "Existem 2 principais versões de Python, Python 2 e Pytnon 3 ainda com poucas diferenças mas que tende a aumentar. Este curso será baseado na versão 3 principalmente porque é mais semanticamente correto, segundo o proprio autor da linguagem, e suporta inumeras novas funcionalidades\n",
+        "\n",
+        "### Para imprimir uma string em python 3\n"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "qPsKertI8LG4",
+        "colab_type": "code",
+        "outputId": "6b52e2e2-235b-4845-ab73-7e9586a3dde2",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "cell_type": "code",
+      "source": [
+        "print('Isto é uma string')"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Isto é uma string\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "id": "aElmcjbGTWeG",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "### Para o mesmo resultado em outras linuagens\n",
+        "\n",
+        "## Java\n",
+        "\n",
+        "```\n",
+        "public class HelloWorld {\n",
+        "    public static void main(String[] args) {\n",
+        "         System.out.println(\"Hello, World\");\n",
+        "    }\n",
+        "\n",
+        "}\n",
+        "\n",
+        "```\n",
+        "\n",
+        "##  C Sharp\n",
+        "\n",
+        "```\n",
+        "using System;\n",
+        "class Program\n",
+        "{\n",
+        "    public static void Main(string[] args)\n",
+        "    {\n",
+        "        Console.WriteLine(\"Hello, world!\");\n",
+        "    }\n",
+        "}\n",
+        "```\n",
+        "\n",
+        "## Delphi\n",
+        "```\n",
+        "program HelloWorld;\n",
+        "begin\n",
+        "  Writeln('Hello, world!');\n",
+        "end.\n",
+        "```"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "30zuFB9MTIFJ",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "O "
+      ]
+    },
+    {
+      "metadata": {
+        "id": "mdxkYTvS9DLb",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "metadata": {
+        "id": "--sl4mDY8g9e",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "# Identação:\n",
+        "A maioria das linguagens modernas exigem algum elemento visual para delimitar blocos, chaves para java e javascript, por exemplo, mas não exigem identação (blocos espaçados para indicar hierarquia ou escopo), Python, ao contrário, não suporta um caracter para delimitar blocos, ao invés disso, exige identação para isso. Por exemplo:\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "VkNiG18i8oO-",
+        "colab_type": "code",
+        "outputId": "20b0121f-b7fb-4c20-bc8c-9da1613dc263",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "cell_type": "code",
+      "source": [
+        "x = 1\n",
+        "if x == 1:\n",
+        "    # Identado em 4 espaços\n",
+        "    print(\"x é 1\")"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "x é 1\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "id": "TApMKZeK8_f8",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "**Exercicio:**\n",
+        "Use a função print para apresentar a linha “Alô, Mundo”  "
+      ]
+    },
+    {
+      "metadata": {
+        "id": "kOHyAqEa9495",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "# Variáveis e tipos\n",
+        "Python é multiparadigma, isto é, suport os paradigmas de Orientação a objetos (OO), programação procedural e programação funcional, além disso ela não estaticamente tipada, isto é, não é preciso declarar uma variável, ou seu tipo, antes de usa-la. Apesar da característica multiparadigma, toda variável em python é um objeto. Nesse curso vamos ver  os tipos básico de variáveis:\n",
+        "\n",
+        "## Números:\n",
+        "Python suporta dois tipos de números, Inteiros e ponto flutuante (Também suporta números complexos que não será objeto desse curso)\n",
+        "\n",
+        "Para definir um numero inteiro, use a sintaxe:\n"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "CROWcCPd-P4-",
+        "colab_type": "code",
+        "outputId": "ccc3bc77-9f59-46cd-c533-b511147e5bf0",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "cell_type": "code",
+      "source": [
+        "myint = 7\n",
+        "print(myint)\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "7\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "id": "f-zZC78x-q_N",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "## Números em ponto flutante\n",
+        "Para definir um numero em ponto flutuante, voce pode usar a seguintes notações:\n",
+        "\n"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "F7nTUspp-0Nb",
+        "colab_type": "code",
+        "outputId": "ad7c6cd2-6048-4b7d-fa9c-9113888a20cd",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 52
+        }
+      },
+      "cell_type": "code",
+      "source": [
+        "myfloat = 7.0\n",
+        "print(myfloat)\n",
+        "\n",
+        "myfloat = float(7)\n",
+        "print(myfloat)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "7.0\n",
+            "7.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "id": "rouwOyy29v6k",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "# Strings\n",
+        "strings podem ser definidas com aspas duplas ou aspas simples\n",
+        "\n",
+        "```\n",
+        "mystring = ‘hello’\n",
+        "mystring= “hello”\n",
+        "```\n",
+        "\n",
+        "Dessa forma é possível incluir em uma string aspas duplas e/ou simples, por exemplo:\n",
+        "\n",
+        "```\n",
+        "mystr1 = 'Fazendo uma \"citação\"'\n",
+        "mystr2 = “Fazendo uma ‘citação’” \n",
+        "```\n"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "g5ziPkLVEeGp",
+        "colab_type": "text"
+      },
+      "cell_type": "markdown",
+      "source": [
+        "### Exercício\n",
+        "Crie duas variáveis do tipo string, uma contendo uma palavra entre aspas simples e outra contendo uma palavra entre aspas duplas. Apresente as duas variáveis com a função `print`"
+      ]
+    },
+    {
+      "metadata": {
+        "id": "Ju0VYsvfE_VX",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "metadata": {
+        "id": "jtpW6bQCEg7g",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
