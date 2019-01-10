@@ -1,0 +1,31 @@
+Anaconda
+https://www.anaconda.com/download/
+
+Pycharm Community 
+https://www.jetbrains.com/pycharm/download/
+
+DBeaver
+https://dbeaver.io/download/
+
+Stackoverflow 
+https://pt.stackoverflow.com/
+
+Git
+https://git-scm.com/download/
+
+Libreoffice
+https://pt-br.libreoffice.org/baixe-ja/libreoffice-novo/
+
+
+cmder
+http://cmder.net/
+Baixe a versão full
+
+
+
+
+
+
+
+
+
